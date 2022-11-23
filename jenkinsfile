@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+   
+
+    stages {
+        stage('Build') {
+            steps {
+                
+                script{
+                    
+                    echo "compile the code"
+                }
+            }
+
+           
+        }
+        stage('Test') {
+            steps {
+                
+                script{
+                    
+                    echo "test the code"
+                }
+            }
+
+           
+        }
+        stage('Run') {
+            steps {
+                
+                script{
+                    
+                    echo "run the code"
+                }
+            }
+
+           
+        }
+        
+    
+    }
+}
